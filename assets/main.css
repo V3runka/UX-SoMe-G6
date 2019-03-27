@@ -1,0 +1,153 @@
+body {
+    background: #333;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.body-wrapper {
+    width: 800px;
+    height: 1500px;
+    margin: 0 auto;
+    background-color: #90D4ED;
+    background-image: linear-gradient(#90D4ED, #B3D8E5);
+    overflow: hidden;
+    position: relative;
+}
+
+.bird {
+    animation: fly linear 0.5s infinite alternate;
+}
+
+.bird-wrapper {
+    display: block;
+    position: absolute;
+    width: 200px;
+}
+
+.bird-wrapper-1 {
+    animation-name: moveToRight;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    top: 700px;
+    left: -200px;
+}
+
+.bird-wrapper-2 {
+    animation-name: moveToLeft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 1000px;
+    right: -200px;
+}
+
+.bird-wrapper-3 {
+    animation-name: moveToLeft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    top: 1200px;
+    right: -200px;
+}
+
+.bird-layer {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.ground {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.layer {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*.layer > * {
+    position: relative;
+    top: -100%;
+    height: 200%;
+}*/
+
+.hill2 {
+    height: auto;
+    /*bottom: -20px;*/
+}
+
+.hill1 {
+    height: auto;
+}
+
+.castle {
+    height: 370px;
+    width: auto;
+    left: 50px;
+    bottom: 180px;
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveToLeft {
+    0% {
+        right: -500px;
+        transform: scaleX(-1);
+    }
+
+    50% {
+        right: calc(100% + 500px);
+        transform: scaleX(-1);
+    }
+
+    51% {
+        right: calc(100% + 500px);
+        transform: scaleX(1);
+    }
+
+    100% {
+        right: -500px;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        left: -500px;
+        transform: scaleX(1);
+    }
+
+    50% {
+        left: calc(100% + 500px);
+        transform: scaleX(1);
+    }
+
+    51% {
+        left: calc(100% + 500px);
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: -500px;
+        transform: scaleX(-1);
+    }
+}
