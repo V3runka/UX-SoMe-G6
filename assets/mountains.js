@@ -1,4 +1,4 @@
-//  http://scrollmagic.io/examples/advanced/parallax_sections.html
+// https://www.youtube.com/watch?v=itg8hiG3jFU
 window.scrollTo(0, document.body.scrollHeight);
 
 $(window).scroll(function () {
@@ -15,6 +15,7 @@ $(window).scroll(function () {
     });
 });
 
+//  http://scrollmagic.io/examples/advanced/parallax_sections.html
 
 /*
 var controller = new ScrollMagic.Controller({
