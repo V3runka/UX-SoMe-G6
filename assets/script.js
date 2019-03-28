@@ -8,6 +8,7 @@ $(window).scroll(function () {
 
     var scrollTop = height - top;
     $('.layer').each(function () {
+        // 'this' reffers to one '.layer' element
         var layer = $(this);
         var dataSpeed = layer.data('speed');
         // offsetY is the number of pixels by which the elemet should move
