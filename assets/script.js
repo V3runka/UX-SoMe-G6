@@ -1,54 +1,16 @@
-/*
-document.addEventListener('click', event => {
-        if (event.target.classList.contains('bird-wrapper')) {
-            event.target.classList.add('super-fast');
-        }
-    },
-    false
-);
-*/
-var birdSpeed = document.getElementById("birdOne");
+// Apply parallax effect on the SVGs which has the '.layer' class (hill1, hill2, castle). Code is taken from https://www.youtube.com/watch?v=itg8hiG3jFU
+window.scrollTo(0, document.body.scrollHeight);
 
-TweenMax.to(birdSpeed, 3, {
-    x: 500
-})
+$(window).scroll(function () {
+    const height = $(document).height();
+    const top = $(window).scrollTop() + $(window).height();
 
-$(funvtion) {
-    $(document).on("click", "#birdOne", function () {
-        TweenMax.to(birdSpeed, 1, {
-            ease: Back.easeOut,
-            delay: 3
-        });
+    var scrollTop = height - top;
+    $('.layer').each(function () {
+        var layer = $(this);
+        var dataSpeed = layer.data('speed');
+        var offsetY = -(scrollTop * dataSpeed);
+        var translate = 'translate3d(0, ' + offsetY + 'px, 0)';
+        layer.css('transform', translate);
     });
-}
-/*document.getElementById("birdOne").addEventListener("click", function () {
-    console.log("Hello");
-    TweenMax.to(birdSpeed, 2, {
-        left: 500,
-
-    });
-
-    TweenMax.to(birdSpeed, 1, {
-        ease: Back.easeOut,
-        delay: 3
-    });
-
-});*/
-
-/*
-var birdOne = document.getElementById("birdOne")
-TweenMax.to(birdOne, 2, {
-    left: 200
-})
-TweenMax.to(birdOne, 2, {
-    opacity: 0,
-    delay: 1
 });
-
-TweenMax.to($("h2.feature"), 2, {
-    left: 200
-});
-TweenMax([birdOne, thumb], 2, {
-    opacity: 0
-});
-*/

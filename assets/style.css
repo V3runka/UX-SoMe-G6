@@ -53,12 +53,6 @@ body {
     right: -200px;
 }
 
-.bird-layer {
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
-
 .ground {
     height: 100%;
     overflow: hidden;
@@ -75,15 +69,8 @@ body {
     width: 100%;
 }
 
-/*.layer > * {
-    position: relative;
-    top: -100%;
-    height: 200%;
-}*/
-
 .hill2 {
     height: auto;
-    /*bottom: -20px;*/
 }
 
 .hill1 {
