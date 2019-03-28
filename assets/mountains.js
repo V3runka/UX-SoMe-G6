@@ -1,3 +1,4 @@
+//  http://scrollmagic.io/examples/advanced/parallax_sections.html
 window.scrollTo(0, document.body.scrollHeight);
 
 $(window).scroll(function () {
@@ -14,7 +15,7 @@ $(window).scroll(function () {
     });
 });
 
-//  http://scrollmagic.io/examples/advanced/parallax_sections.html
+
 /*
 var controller = new ScrollMagic.Controller({
     globalSceneOptions: {
