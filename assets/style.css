@@ -69,6 +69,13 @@ body {
     width: 100%;
 }
 
+.sun{
+    height: 230px;
+    width: auto;
+    left: 500px;
+    bottom: 280px;
+    }
+
 .hill2 {
     height: auto;
 }
