@@ -114,8 +114,9 @@ body {
 }
 
 .remote-control-controls .control {
-    height: 80px;
-    width: 80px;
+    height: 245px;
+    width: 245px;
+    font-size: 90px;
 }
 
 /* https://www.w3schools.com/csSref/css3_pr_animation-keyframes.asp */
