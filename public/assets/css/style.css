@@ -69,12 +69,12 @@ body {
     width: 100%;
 }
 
-.sun{
+.sun {
     height: 230px;
     width: auto;
     left: 500px;
     bottom: 280px;
-    }
+}
 
 .hill2 {
     height: auto;
@@ -89,6 +89,33 @@ body {
     width: auto;
     left: 50px;
     bottom: 180px;
+}
+
+
+/* ELEVATOR */
+/* Controls on the elevator page (/index) */
+.controls {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row-gap: 10px;
+    left: 20px;
+    position: fixed;
+    top: 20px;
+}
+
+/* Controls on the "remote" control page (/control) */
+.remote-control-controls {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1;
+    grid-row-gap: 20px;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.remote-control-controls .control {
+    height: 80px;
+    width: 80px;
 }
 
 /* https://www.w3schools.com/csSref/css3_pr_animation-keyframes.asp */
