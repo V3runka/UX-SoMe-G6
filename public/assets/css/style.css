@@ -36,11 +36,13 @@ body {
 
 .bird-wrapper-2 {
     animation-name: moveToLeft;
-    animation-duration: 10s;
+    animation-duration: 40s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     top: 750px;
     right: -200px;
+    width: 100px;
+    height: auto;
 }
 
 .bird-wrapper-3 {
