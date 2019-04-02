@@ -30,7 +30,7 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s;
-    top: 700px;
+    top: 500px;
     left: -200px;
 }
 
@@ -39,7 +39,7 @@ body {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 1000px;
+    top: 750px;
     right: -200px;
 }
 
@@ -49,7 +49,7 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 3s;
-    top: 1200px;
+    top: 900px;
     right: -200px;
 }
 
