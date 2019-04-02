@@ -85,10 +85,10 @@ body {
 }
 
 .castle {
-    height: 370px;
+    height: 300px;
     width: auto;
-    left: 50px;
-    bottom: 180px;
+    left: 70px;
+    bottom: 220px;
 }
 
 .frame {
