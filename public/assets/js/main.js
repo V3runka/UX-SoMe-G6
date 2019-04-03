@@ -20,6 +20,7 @@ $(window).scroll(function () {
 
 // I used Event Bubbling. See for more: https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/
 document.addEventListener('click', function (event) {
+    console.log(event.target);
     if (event.target.classList.contains('cloud')) {
         event.target.parentElement.style.display = "none";
         setTimeout(function () {

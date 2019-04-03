@@ -70,8 +70,10 @@ body {
     animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 200px;
+    top: 400px;
     left: 0;
+    width: 200px;
+    height: auto;
 }
 
 .cloud-wrapper-2 {
@@ -79,8 +81,10 @@ body {
     animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 300px;
+    top: 700px;
     right: 0;
+    width: 220px;
+    height: auto;
 }
 
 .cloud-wrapper-3 {
@@ -88,8 +92,8 @@ body {
     animation-duration: 100;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 150px;
-    right: 10px;
+    top: 100px;
+    right: 50px;
 }
 
 .cloud-wrapper-4 {
@@ -106,8 +110,10 @@ body {
     animation-duration: 100;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 550px;
-    right: 300px;
+    top: 620px;
+    right: 250px;
+    width: 200px;
+    height: auto;
 }
 
 .cloud-wrapper-6 {
@@ -139,7 +145,7 @@ body {
     height: 230px;
     width: auto;
     left: 500px;
-    bottom: 450px;
+    bottom: 520px;
 }
 
 .hill2 {
@@ -153,10 +159,10 @@ body {
 }
 
 .castle {
-    height: 300px;
+    height: 550px;
     width: auto;
     left: 390px;
-    bottom: 280px;
+    bottom: 20px;
 }
 
 .frame {
@@ -165,7 +171,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
-
+    pointer-events: none;
 }
 
 /* ELEVATOR */
@@ -208,17 +214,17 @@ body {
 
 @keyframes moveToLeft {
     0% {
-        right: -500px;
+        right: -300px;
         transform: scaleX(-1);
     }
 
     50% {
-        right: calc(100% + 500px);
+        right: calc(100% + 200px);
         transform: scaleX(-1);
     }
 
     51% {
-        right: calc(100% + 500px);
+        right: calc(100% + 200px);
         transform: scaleX(1);
     }
 
@@ -230,17 +236,17 @@ body {
 
 @keyframes moveToRight {
     0% {
-        left: -500px;
+        left: -300px;
         transform: scaleX(1);
     }
 
     50% {
-        left: calc(100% + 500px);
+        left: calc(100% + 200px);
         transform: scaleX(1);
     }
 
     51% {
-        left: calc(100% + 500px);
+        left: calc(100% + 200px);
         transform: scaleX(-1);
     }
 
@@ -249,3 +255,5 @@ body {
         transform: scaleX(-1);
     }
 }
+
+@keyframes rotation {}
