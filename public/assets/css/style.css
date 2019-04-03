@@ -133,19 +133,21 @@ body {
 }
 
 .layer {
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
+.layer-sun {
+    left: 500px;
+    bottom: 520px;
+}
+
 .sun {
     height: 230px;
     width: auto;
-    left: 500px;
-    bottom: 520px;
+    display: block;
+    animation: rotation 25s linear infinite;
 }
 
 .hill2 {
@@ -256,4 +258,12 @@ body {
     }
 }
 
-@keyframes rotation {}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
