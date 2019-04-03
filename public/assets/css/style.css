@@ -75,22 +75,24 @@ body {
     height: 230px;
     width: auto;
     left: 500px;
-    bottom: 280px;
+    bottom: 450px;
 }
 
 .hill2 {
     height: auto;
+    bottom: 100px;
 }
 
 .hill1 {
     height: auto;
+    bottom: -50px;
 }
 
 .castle {
     height: 300px;
     width: auto;
-    left: 70px;
-    bottom: 220px;
+    left: 390px;
+    bottom: 280px;
 }
 
 .frame {
