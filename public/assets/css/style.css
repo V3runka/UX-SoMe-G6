@@ -55,6 +55,70 @@ body {
     right: -200px;
 }
 
+.cloud {
+    animation: fly linear 7s infinite alternate;
+}
+
+.cloud-wrapper {
+    display: block;
+    position: absolute;
+    width: 150px;
+}
+
+.cloud-wrapper-1 {
+    animation-name: moveToRight;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 200px;
+    left: 0;
+}
+
+.cloud-wrapper-2 {
+    animation-name: moveToLeft;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 300px;
+    right: 0;
+}
+
+.cloud-wrapper-3 {
+    animation-name: moveToLeft;
+    animation-duration: 100;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 150px;
+    right: 10px;
+}
+
+.cloud-wrapper-4 {
+    animation-name: moveToLeft;
+    animation-duration: 100;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 200px;
+    left: 50px;
+}
+
+.cloud-wrapper-5 {
+    animation-name: moveToLeft;
+    animation-duration: 100;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 550px;
+    right: 300px;
+}
+
+.cloud-wrapper-6 {
+    animation-name: moveToRight;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 180px;
+    left: 0;
+}
+
 .ground {
     height: 100%;
     overflow: hidden;
