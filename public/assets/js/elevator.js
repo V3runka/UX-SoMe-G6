@@ -22,7 +22,6 @@ class App {
             distance = $(document).height() - $(window).height();
         }
 
-        console.log(distance);
         // Use TweenMax to animate window scroll
         TweenMax.to(window, 10, {
             ease: Power0.easeInOut, // Animation easing (https://greensock.com/docs/Easing see code below the chart)
