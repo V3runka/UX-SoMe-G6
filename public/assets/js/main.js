@@ -20,11 +20,29 @@ $(window).scroll(function () {
 
 // I used Event Bubbling. See for more: https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/
 document.addEventListener('click', function (event) {
-    console.log(event.target);
+    /*console.log(event.target);*/
     if (event.target.classList.contains('cloud')) {
         event.target.parentElement.style.display = "none";
         setTimeout(function () {
             event.target.parentElement.style.display = "block";
         }, 5000);
+    }
+}, false);
+
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('change-color-a')) {
+        event.target.classList.toggle("bird-color-blue");
+    }
+}, false);
+
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('change-color-b')) {
+        event.target.classList.toggle("bird-color-red");
+    }
+}, false);
+
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('change-color-c')) {
+        event.target.classList.toggle("bird-color-yellow");
     }
 }, false);

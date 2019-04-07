@@ -55,6 +55,42 @@ body {
     right: -200px;
 }
 
+.bird-color-blue .bird-a1 {
+    fill: #134aa3;
+}
+
+.bird-color-blue .bird-a2 {
+    fill: #175ac6;
+}
+
+.bird-color-blue .bird-a6 {
+    fill: #1552b4;
+}
+
+.bird-color-red .bird-b1 {
+    fill: #CB251F;
+}
+
+.bird-color-red .bird-b2 {
+    fill: #F72C25;
+}
+
+.bird-color-red .bird-b6 {
+    fill: #E12822;
+}
+
+.bird-color-yellow .bird-c1 {
+    fill: #C2AB25;
+}
+
+.bird-color-yellow .bird-c2 {
+    fill: #EDD02D;
+}
+
+.bird-color-yellow .bird-c6 {
+    fill: #D8BE29;
+}
+
 .cloud {
     animation: fly linear 7s infinite alternate;
 }
