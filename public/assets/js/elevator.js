@@ -19,11 +19,13 @@ class App {
         let distance = 0;
 
         if (floorId === "bottom") {
-            distance = $(document).height();
+            distance = $(document).height() - $(window).height();
         }
+
+        console.log(distance);
         // Use TweenMax to animate window scroll
         TweenMax.to(window, 10, {
-            ease: Power1.easeInOut, // Animation easing (https://greensock.com/docs/Easing see code below the chart)
+            ease: Power0.easeInOut, // Animation easing (https://greensock.com/docs/Easing see code below the chart)
             scrollTo: distance
         });
     }
