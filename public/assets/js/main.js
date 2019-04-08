@@ -1,3 +1,6 @@
+// Initialize socket.io (https://socket.io/get-started/chat/)
+const socket = io();
+
 // Scroll to the bottom of the page.
 window.scrollTo(0, document.body.scrollHeight);
 
@@ -18,6 +21,7 @@ $(window).scroll(function () {
     });
 });
 
+// Clouds and birds interaction
 document.addEventListener('click', function (event) {
     // I used Event Bubbling. See for more: https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/
     if (event.target.classList.contains('cloud')) {
@@ -48,7 +52,7 @@ document.addEventListener('click', function (event) {
 const frame = {
     container: document.getElementById('dragon-frame'),
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay: false,
     path: 'assets/data/dragon-animation/frame.json'
 };
@@ -114,18 +118,41 @@ const head = {
     container: document.getElementById('dragon-head'),
     renderer: 'svg',
     loop: false,
+    name: 'headAnimation',
     autoplay: false,
     path: 'assets/data/dragon-animation/face.json'
 };
 
-lottie.loadAnimation(frame);
-lottie.loadAnimation(wheel);
-lottie.loadAnimation(tail);
-lottie.loadAnimation(wing);
-lottie.loadAnimation(body);
-lottie.loadAnimation(leg);
-lottie.loadAnimation(arm);
-lottie.loadAnimation(head);
+const armAnimation = lottie.loadAnimation(arm);
+const frameAnimation = lottie.loadAnimation(frame);
+const wheelAnimation = lottie.loadAnimation(wheel);
+const tailAnimation = lottie.loadAnimation(tail);
+const wingAnimation = lottie.loadAnimation(wing);
+const bodyAnimation = lottie.loadAnimation(body);
+const legAnimation = lottie.loadAnimation(leg);
+const headAnimation = lottie.loadAnimation(head);
 
-// Plays animations
-lottie.play();
+lottie.stop();
+
+// Websockets event handler, this runs when you click the control on the /remote-control page
+socket.on('scrollToFloor', floorId => {
+    if (floorId === 'top') {
+        armAnimation.playSegments([150, 550], true);
+        frameAnimation.playSegments([150, 550], true);
+        wheelAnimation.playSegments([150, 550], true);
+        tailAnimation.playSegments([150, 550], true);
+        wingAnimation.playSegments([150, 550], true);
+        bodyAnimation.playSegments([150, 550], true);
+        legAnimation.playSegments([150, 550], true);
+        headAnimation.playSegments([150, 550], true);
+    } else {
+        armAnimation.playSegments([595, 899], true);
+        frameAnimation.playSegments([595, 899], true);
+        wheelAnimation.playSegments([595, 899], true);
+        tailAnimation.playSegments([595, 899], true);
+        wingAnimation.playSegments([595, 899], true);
+        bodyAnimation.playSegments([595, 899], true);
+        legAnimation.playSegments([595, 899], true);
+        headAnimation.playSegments([595, 899], true);
+    }
+});

@@ -2,9 +2,6 @@ class App {
     // Defines the scrolling speed
     pixelsPerSecond = 400;
 
-    // Initialize socket.io (https://socket.io/get-started/chat/)
-    socket = io();
-
     constructor() {
         this.attachListeners();
     }
@@ -51,10 +48,11 @@ class App {
         );
 
         // Websockets event handler, this runs when you click the control on the /remote-control page
-        this.socket.on('scrollToFloor', floorId => {
+        socket.on('scrollToFloor', floorId => {
             console.log(
                 `Received event from remote control, scrolling to floor: ${floorId}`
             );
+
             this.scrollTo(floorId);
         });
     }
