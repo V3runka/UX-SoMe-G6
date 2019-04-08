@@ -14,6 +14,15 @@ body {
     position: relative;
 }
 
+.body-wrapper.night .desaturate {
+    filter: saturate(50%);
+}
+
+.body-wrapper.night {
+    background-color: #233363;
+    background-image: linear-gradient(#233363, #374571);
+}
+
 .bird {
     animation: fly linear 0.5s infinite alternate;
 }
@@ -22,6 +31,10 @@ body {
     display: block;
     position: absolute;
     width: 200px;
+}
+
+.body-wrapper.night .bird-wrapper {
+    display: none;
 }
 
 .bird-wrapper-1 {
@@ -179,11 +192,25 @@ body {
     bottom: 580px;
 }
 
-.sun {
+.sun,
+.moon {
     height: 230px;
     width: auto;
     display: block;
     animation: rotation 25s linear infinite;
+}
+
+.moon {
+    display: none;
+    height: 180px;
+}
+
+.body-wrapper.night .sun {
+    display: none;
+}
+
+.body-wrapper.night .moon {
+    display: block;
 }
 
 .hill2 {

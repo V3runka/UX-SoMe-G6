@@ -1,3 +1,26 @@
+// Get sunrise and sunset from the API and switch to night mode.
+function nightLight() {
+    const url = 'http://api.sunrise-sunset.org/json?lat=55.733410&lng=9.108180&date=today&formatted=0';
+
+    fetch(url).then(function (response) {
+        return response.json();
+    }).then(function (response) {
+        console.log(response);
+        const sunset = new Date(response.results.sunset);
+        const now = new Date();
+        const sunrise = new Date(response.results.sunrise);
+
+
+        if (now.getHours() >= sunset.getHours() || now.getHours() <= sunrise.getHours()) {
+            document.querySelector('.body-wrapper').classList.add('night');
+        }
+
+        console.log(sunset);
+    });
+}
+
+nightLight();
+
 // Initialize socket.io (https://socket.io/get-started/chat/)
 const socket = io();
 
