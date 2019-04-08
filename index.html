@@ -11,6 +11,18 @@
 
 <body>
     <div class="body-wrapper">
+        <div class="dragon-wrapper">
+            <div class="dragon">
+                <div class="dragon-layer" id="dragon-frame"></div>
+                <div class="dragon-layer" id="dragon-wheel"></div>
+                <div class="dragon-layer" id="dragon-tail"></div>
+                <div class="dragon-layer" id="dragon-wing"></div>
+                <div class="dragon-layer" id="dragon-body"></div>
+                <div class="dragon-layer" id="dragon-leg"></div>
+                <div class="dragon-layer" id="dragon-arm"></div>
+                <div class="dragon-layer" id="dragon-head"></div>
+            </div>
+        </div>
 
         <section class="ground" id="home">
             <div class="layer layer-sun" data-speed="0.8">
@@ -272,7 +284,6 @@
                 </path>
             </svg>
         </div>
-        <img id="frame" class="frame" src="assets/images/frame.svg" alt="">
     </div>
 
     <!-- CDN link to jQuery -->
@@ -281,6 +292,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/js/lottie.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/elevator.js"></script>
 

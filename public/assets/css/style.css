@@ -212,6 +212,31 @@ body {
     pointer-events: none;
 }
 
+.dragon-wrapper {
+    bottom: -4px;
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 800px;
+    z-index: 2;
+}
+
+.dragon-wrapper .dragon {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.dragon-layer {
+    background: none;
+    bottom: 0;
+    display: block;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    position: absolute;
+}
+
 /* ELEVATOR */
 /* Controls on the elevator page (/index) */
 .controls {
