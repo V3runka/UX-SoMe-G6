@@ -1,6 +1,6 @@
 // Get sunrise and sunset from the API and switch to night mode.
 function nightLight() {
-    const url = 'http://api.sunrise-sunset.org/json?lat=55.733410&lng=9.108180&date=today&formatted=0';
+    const url = 'https://api.sunrise-sunset.org/json?lat=55.733410&lng=9.108180&date=today&formatted=0';
 
     fetch(url).then(function (response) {
         return response.json();
@@ -161,7 +161,7 @@ lottie.stop();
 socket.on('scrollToFloor', floorId => {
     if (floorId === 'top') {
         armAnimation.playSegments([150, 550], true);
-        frameAnimation.playSegments([150, 550], true);
+        frameAnimation.playSegments([50, 450], true);
         wheelAnimation.playSegments([150, 550], true);
         tailAnimation.playSegments([150, 550], true);
         wingAnimation.playSegments([150, 550], true);
@@ -170,7 +170,7 @@ socket.on('scrollToFloor', floorId => {
         headAnimation.playSegments([150, 550], true);
     } else {
         armAnimation.playSegments([595, 899], true);
-        frameAnimation.playSegments([595, 899], true);
+        frameAnimation.playSegments([495, 799], true);
         wheelAnimation.playSegments([595, 899], true);
         tailAnimation.playSegments([595, 899], true);
         wingAnimation.playSegments([595, 899], true);
