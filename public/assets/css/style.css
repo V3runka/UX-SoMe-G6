@@ -39,7 +39,7 @@ body {
 
 .bird-wrapper-1 {
     animation-name: moveToRight;
-    animation-duration: 15s;
+    animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s;
@@ -49,18 +49,18 @@ body {
 
 .bird-wrapper-2 {
     animation-name: moveToLeft;
-    animation-duration: 40s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     top: 750px;
     right: -200px;
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
 .bird-wrapper-3 {
     animation-name: moveToLeft;
-    animation-duration: 15s;
+    animation-duration: 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 3s;
