@@ -161,7 +161,7 @@ lottie.stop();
 socket.on('scrollToFloor', floorId => {
     if (floorId === 'top') {
         armAnimation.playSegments([150, 550], true);
-        frameAnimation.playSegments([50, 450], true);
+        frameAnimation.playSegments([150, 550], true);
         wheelAnimation.playSegments([150, 550], true);
         tailAnimation.playSegments([150, 550], true);
         wingAnimation.playSegments([150, 550], true);
@@ -170,7 +170,7 @@ socket.on('scrollToFloor', floorId => {
         headAnimation.playSegments([150, 550], true);
     } else {
         armAnimation.playSegments([595, 899], true);
-        frameAnimation.playSegments([495, 799], true);
+        frameAnimation.playSegments([595, 899], true);
         wheelAnimation.playSegments([595, 899], true);
         tailAnimation.playSegments([595, 899], true);
         wingAnimation.playSegments([595, 899], true);
